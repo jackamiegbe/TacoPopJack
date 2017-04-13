@@ -9,7 +9,7 @@
 import UIKit
 
 //14th for collection cell and then connect outlets
-class TacoCell: UICollectionViewCell {
+class TacoCell: UICollectionViewCell, NibLoadableView {
     
     @IBOutlet weak var tacoImage: UIImageView!
     @IBOutlet weak var tacoLabel: UILabel!

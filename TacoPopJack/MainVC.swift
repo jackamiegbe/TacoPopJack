@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, /* to work with data service func */ DataServiceDelegate  {
+class MainVC: UIViewController, DataServiceDelegate  {
     
     //3rd outlet and then at main story board change the class of sub header
     @IBOutlet weak var headerView: ViewHeader!
@@ -28,22 +28,25 @@ class MainVC: UIViewController, /* to work with data service func */ DataService
         ds.loadDeliciousTacoData()
         
         
-//        ds.tacoArray.shuffle()        
+        //ds.tacoArray.shuffle()
         
         //21st
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        
-        
         //4th connect IBOutlet and add DropShadow
         headerView.addDropShadow()
+        
+//        let nib = UINib(nibName: "TacoCell", bundle: nil)
+//        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        collectionView.register(TacoCell.self)
+        
     }
     
     //18th so we know the data loaded
     func deliciousTacoDataloaded() {
         print("Delicious Taco Data is Loaded")
-        collectionView.reloadData()
+        //collectionView.reloadData()
     }
 }
 
@@ -85,9 +88,9 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         //        return CGSize(width: 95, height: 95)
         
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//            if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
-//                cell.shake()
-//            }
+            //            if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
+            //                cell.shake()
+            //            }
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

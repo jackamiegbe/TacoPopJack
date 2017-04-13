@@ -16,7 +16,7 @@
 		FA11BC341E9F03DC00BBC8EE /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC331E9F03DC00BBC8EE /* DropShadow.swift */; };
 		FA11BC361E9F051100BBC8EE /* ViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC351E9F051100BBC8EE /* ViewHeader.swift */; };
 		FA11BC381E9F080F00BBC8EE /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC371E9F080F00BBC8EE /* Taco.swift */; };
-		FA11BC3A1E9F0BC500BBC8EE /* DataServiced.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC391E9F0BC500BBC8EE /* DataServiced.swift */; };
+		FA11BC3A1E9F0BC500BBC8EE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC391E9F0BC500BBC8EE /* DataService.swift */; };
 		FA11BC3F1E9F121900BBC8EE /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC3D1E9F121900BBC8EE /* TacoCell.swift */; };
 		FA11BC401E9F121900BBC8EE /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA11BC3E1E9F121900BBC8EE /* TacoCell.xib */; };
 		FA11BC421E9F1B6C00BBC8EE /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11BC411E9F1B6C00BBC8EE /* ReusableView.swift */; };
@@ -48,7 +48,7 @@
 		FA11BC331E9F03DC00BBC8EE /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		FA11BC351E9F051100BBC8EE /* ViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHeader.swift; sourceTree = "<group>"; };
 		FA11BC371E9F080F00BBC8EE /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
-		FA11BC391E9F0BC500BBC8EE /* DataServiced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiced.swift; sourceTree = "<group>"; };
+		FA11BC391E9F0BC500BBC8EE /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FA11BC3D1E9F121900BBC8EE /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
 		FA11BC3E1E9F121900BBC8EE /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
 		FA11BC411E9F1B6C00BBC8EE /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FA11BC371E9F080F00BBC8EE /* Taco.swift */,
-				FA11BC391E9F0BC500BBC8EE /* DataServiced.swift */,
+				FA11BC391E9F0BC500BBC8EE /* DataService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 				FA11BC421E9F1B6C00BBC8EE /* ReusableView.swift in Sources */,
 				FA11BC321E9F015E00BBC8EE /* MainVC.swift in Sources */,
 				FA11BC381E9F080F00BBC8EE /* Taco.swift in Sources */,
-				FA11BC3A1E9F0BC500BBC8EE /* DataServiced.swift in Sources */,
+				FA11BC3A1E9F0BC500BBC8EE /* DataService.swift in Sources */,
 				FA11BC361E9F051100BBC8EE /* ViewHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
