@@ -8,8 +8,9 @@
 
 import Foundation
 
-//11th any code that confirms to this protocol will use it 
+//11th any code that confirms to this protocol will use it
 protocol DataServiceDelegate: class {
+    //When you call this func it will load the array, remember delegate?.deliciousTacoDataloaded() below
     func deliciousTacoDataloaded()
 
 }
@@ -22,6 +23,7 @@ class DataService {
     //12th ? is put cos we may not always have
     weak var delegate: DataServiceDelegate?
     
+    //Its pullings its data from the data from type Taco.Swift
      var tacoArray: Array<Taco> = []
     
     //10th appening to the array via Id when you load a taco
