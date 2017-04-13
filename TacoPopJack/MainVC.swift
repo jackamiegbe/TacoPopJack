@@ -9,29 +9,18 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
+    //3rd outlet and then at main story board change the class of sub header
+    @IBOutlet weak var headerView: ViewHeader!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        print("hello world")
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        //4th connect IBOutlet and add DropShadow
+        headerView.addDropShadow()
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
