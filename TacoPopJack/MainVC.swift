@@ -22,13 +22,10 @@ class MainVC: UIViewController, DataServiceDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-       //20th to load data
+        //20th to load data
         //ds = DataService.instance
         ds.delegate = self
         ds.loadDeliciousTacoData()
-        
-        
         //ds.tacoArray.shuffle()
         
         //21st
@@ -41,7 +38,6 @@ class MainVC: UIViewController, DataServiceDelegate  {
         //let nib = UINib(nibName: "TacoCell", bundle: nil)
         //collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
         collectionView.register(TacoCell.self)
-        
     }
     
     //18th so we know the data loaded
