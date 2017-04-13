@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, DataServiceDelegate  {
+class MainVC: UIViewController, DataServiceDelegate {
     
     //3rd outlet and then at main story board change the class of sub header
     @IBOutlet weak var headerView: ViewHeader!
@@ -26,7 +26,9 @@ class MainVC: UIViewController, DataServiceDelegate  {
         //ds = DataService.instance
         ds.delegate = self
         ds.loadDeliciousTacoData()
-        //ds.tacoArray.shuffle()
+        
+        //25th conforming to the mutable array type
+        ds.tacoArray.shuffle()
         
         //21st
         collectionView.delegate = self
@@ -43,11 +45,9 @@ class MainVC: UIViewController, DataServiceDelegate  {
     //18th so we know the data loaded
     func deliciousTacoDataloaded() {
         print("Delicious Taco Data is Loaded")
-        //collectionView.reloadData()
+        collectionView.reloadData()
     }
 }
-
-
 
 //19 Source data for collection view
 extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -60,13 +60,15 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         return ds.tacoArray.count
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
-            cell.configureCell(taco: ds.tacoArray[indexPath.row])
-            return cell
-        }
-        return UICollectionViewCell()
+        //if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
+        //cell.configureCell(taco: ds.tacoArray[indexPath.row])
+        //return cell
+        //}
+        //return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        cell.configureCell(taco: ds.tacoArray[indexPath.row])
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
