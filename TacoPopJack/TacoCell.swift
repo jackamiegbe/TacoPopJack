@@ -8,7 +8,7 @@
 
 import UIKit
 
-//14th for collection cell
+//14th for collection cell and then connect outlets
 class TacoCell: UICollectionViewCell {
     
     @IBOutlet weak var tacoImage: UIImageView!
@@ -16,6 +16,7 @@ class TacoCell: UICollectionViewCell {
     
     var taco: Taco!
     
+    //15th what will be shown in cells
     func configureCell(taco: Taco) {
         self.taco = taco
         tacoImage.image = UIImage(named: taco.proteinId.rawValue)
