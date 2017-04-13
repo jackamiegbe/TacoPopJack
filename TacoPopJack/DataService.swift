@@ -12,7 +12,6 @@ import Foundation
 protocol DataServiceDelegate: class {
     //When you call this func it will load the array, remember delegate?.deliciousTacoDataloaded() below
     func deliciousTacoDataloaded()
-
 }
 
 class DataService {
